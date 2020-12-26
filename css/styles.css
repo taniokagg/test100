@@ -1,0 +1,565 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+title {
+display: none;
+}
+
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none; 
+}
+
+
+/* news-box news-text news-day news-title news-button */
+
+
+.eyecatch {
+  height: 700px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.eyecatch-p {
+  /* background-color: pink; */
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.news-box {
+  display: flex;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.news-text {
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+
+.news-day {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+}
+.news-title {
+  line-height: 70px;
+  padding-left: 20px;
+  padding-right: 350px;
+}
+
+.button-text {
+  color: #fff;
+  background-color:#000;
+  line-height: 70px;
+  padding: 0 45px;
+}
+
+
+/* mission mission-contain mission-title mission-text link1 */
+
+.mission {
+  background-color: #000;
+  position: relative;
+  height: 500px;
+  margin-bottom: 200px;
+}
+.mission-contain {
+  /* background-color: #000; */
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+width: 60%;
+/* margin: 0 auto; */
+line-height: 1.4em; 
+font-size: 16.5px;
+}
+
+.mission-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.2em;
+}
+
+.mission-text {
+  color: #fff;
+  margin-right: 80px;
+}
+.mission-title,
+.mission-text {
+padding-bottom: 20px;
+
+}
+
+.link1 {
+  padding: 13px 21px; /* 上下に5px、左右に20px */
+  font-size: 14px;
+  color: #000;
+  text-decoration: none; /* テキストのスタイルを消す */
+  background-color: #fff;
+}
+
+.mission-orange img {
+  width:40%;
+  position: absolute;
+  bottom: -60px;
+  right: 100px;
+}
+.mission-orange img {
+  margin-left: auto;
+}
+
+/* 
+service service-box service-title service-title2  service-title3 service-text link2 service-camera */
+
+.service {
+  background-color:#e5e5e5;
+  height: 595px;
+  padding-bottom: 300px;
+}
+
+.service-empty {
+  background-color: #fff;
+  padding: 80px;
+  width: 450px;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+.service-box {
+  /* background-color: yellow; */
+  width: 100%;
+
+}
+
+.service-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.service-title2 {
+font-weight: bold;
+padding-bottom: 20px;
+
+}
+.service-title3 {
+  padding-bottom: 20px;
+}
+
+.service-text {
+  padding-bottom: 20px;
+  line-height: 1.5em;
+}
+
+
+.link2 {
+  padding: 5px 20px; /* 上下に5px、左右に20px */
+  font-size: 14px;
+  color: #000;
+  text-decoration: none; /* テキストのスタイルを消す */
+  border: 1px #000 solid; /* 境界線を引く */
+  /* border-radius: 3px; 要素の角を丸くする */
+  float: right;
+}
+
+.service-camera img {
+  width: 50%;
+  float: right;
+  height: 525px;
+}
+
+
+
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+/* SERVICE2 */
+
+
+.service2 {
+  background-color:#e5e5e5;
+  padding-bottom: 300px;
+  position: relative;
+  width: 100%;
+}
+
+.service2-empty {
+  background-color: #fff;
+  width: 450px;
+  padding: 80px;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+
+.service2-title {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.service2-title2 {
+font-weight: bold;
+padding-bottom: 20px;
+
+}
+.service2-title3 {
+  padding-bottom: 20px;
+}
+
+.service2-text {
+  padding-bottom: 20px;
+  line-height: 1.5em;
+}
+
+
+.link3 {
+  padding: 5px 20px; 
+  font-size: 14px;
+  color: #000;
+  text-decoration: none; 
+  border: 1px #000 solid; 
+  float: right;
+}
+
+.service-marble img {
+  width: 50%;
+}
+
+
+/* otehr cop&rec com&rec-p FAQ FAQ2 */
+
+.other {
+  background-color: #fff;
+}
+
+.com-rec {
+  /* background-color: pink; */
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin: 150px 0;
+font-size
+}
+
+.company {
+ background: url(../img/company.jpeg) no-repeat;
+background-size: cover;
+background-position: center;
+width: 45%;
+color: #fff;
+position: relative;
+}
+
+.company-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+.recruit-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+
+.recruit {
+ background: url(../img/recruit.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+width: 45%;
+height: 300px;
+color: #fff;
+position: relative;
+}
+
+.recruit-p,
+.company-p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.recruit-p2,
+.company-p2 {
+text-align: center;
+}
+
+.FAQ-wrap {
+ background-color: #000;
+ color: #fff;
+ width: 80%;
+margin: 0 auto;
+position: relative;
+padding: 15px 0;
+margin-bottom: 150px;
+}
+
+.FAQ-cat {
+  display: flex;
+
+}
+
+.FAQ {
+font-size: 30px;
+font-weight: bold;
+padding: 25px;
+}
+
+.FAQ2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+
+.p-wrap {
+  height: 500px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.p-wrap2 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  text-align: center;
+  width: 100%;
+}
+
+.a {
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.b {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.c {
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+
+.d {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.link4 {
+  padding: 5px 20px; 
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none; 
+  border: 1px #fff solid; 
+}
+
+
+.header2 {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav2 ul{
+  display: flex;
+}
+
+.header-nav2 li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav2 a {
+  color: #f2f2f2;
+  text-decoration: none; 
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 3px;
+}
